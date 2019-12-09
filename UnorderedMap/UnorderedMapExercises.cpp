@@ -95,12 +95,11 @@ StringIntMap makeWordCounts(const StringVec& words) {
 // =========================================================================
 
 int lookupWithFallback(const StringIntMap& wordcount_map, const std::string& key, int fallbackVal) {
+  if(wordcount_map.count(key)) {
+    return wordcount_map.at(key);
+  }
 
-  // =================================================
-  // EXERCISE 2 WORKSPACE: YOUR CODE HERE
-  // =================================================
-
-  return -1337; // Change this!
+  return fallbackVal;
 }
 
 

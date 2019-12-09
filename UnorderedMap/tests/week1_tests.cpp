@@ -84,7 +84,7 @@ TEST_CASE("Testing makeWordCounts:", "[weight=1]") {
   }
 
 }
-/*
+
 // ========================================================================
 // Tests: lookupWithFallback (with no dependency on makeWordCounts)
 // ========================================================================
@@ -125,7 +125,7 @@ TEST_CASE("Testing lookupWithFallback: When the key doesn't exist", "[weight=1]"
   }
 
 }
-
+/*
 // ========================================================================
 // Tests: memoizedLongestPalindromeLength
 // ========================================================================
