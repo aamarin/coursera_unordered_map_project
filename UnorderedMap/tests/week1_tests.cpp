@@ -84,7 +84,7 @@ TEST_CASE("Testing makeWordCounts:", "[weight=1]") {
   }
 
 }
-
+/*
 // ========================================================================
 // Tests: lookupWithFallback (with no dependency on makeWordCounts)
 // ========================================================================
@@ -161,3 +161,4 @@ TEST_CASE("Testing memoizedLongestPalindromeLength: Memoization table should be 
   }
 
 }
+*/
