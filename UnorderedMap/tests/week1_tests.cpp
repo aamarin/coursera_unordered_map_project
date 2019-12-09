@@ -125,7 +125,7 @@ TEST_CASE("Testing lookupWithFallback: When the key doesn't exist", "[weight=1]"
   }
 
 }
-/*
+
 // ========================================================================
 // Tests: memoizedLongestPalindromeLength
 // ========================================================================
@@ -161,4 +161,3 @@ TEST_CASE("Testing memoizedLongestPalindromeLength: Memoization table should be 
   }
 
 }
-*/

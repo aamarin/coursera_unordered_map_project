@@ -203,18 +203,7 @@ int memoizedLongestPalindromeLength(LengthMemo& memo, const std::string& str, in
   // (It's important to not just use memo[pairKey] in this check, because that will
   //  create the entry with a default value if it doesn't already exist!)
   if (memo.count(pairKey)) {
-
-    // ====================================================================
-    // EXERCISE 3 - PART A - YOUR CODE HERE!
-
-    // We've calculated this subproblem before, and that's why there's a key
-    // for it in the memoization table already. We won't calculate anything
-    // new in this case. So, we also won't store anything new in the table in
-    // this case, only return what's already stored at this key in the map.
-
-    return -1337; // Hint: You need to change this!
-    // ====================================================================
-
+    return memo.at(pairKey);
   }
 
   // If the memoization table didn't have an entry for this key yet,
@@ -315,11 +304,8 @@ int memoizedLongestPalindromeLength(LengthMemo& memo, const std::string& str, in
   // Return whichever result was greater.
   // We can also store this result for memoization purposes.
   int greaterResult = std::max(leftSubproblemResult,rightSubproblemResult);
+  memo[pairKey] = greaterResult;
 
-  // =======================================================================
-  // EXERCISE 3 - PART B - YOUR CODE HERE!
-  //
-  return -1337; // Hint: You need to change this!
-  // =======================================================================
+  return greaterResult;
 }
 
